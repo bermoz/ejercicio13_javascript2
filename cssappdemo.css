@@ -1,0 +1,62 @@
+
+.para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.para0 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.caja {
+    max-width: 1200px;
+    width: 90%;
+    background-color: grey;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.caja1 {
+    background-color: red;
+    color: yellow;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.caja2 {
+    background-color:  blue;
+    color: yellow;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.caja3 {
+    font-size: large;
+    font-weight: 800;
+    background-color:  orange;
+    color: blueviolet;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.caja4 {
+    background-color: gainsboro ;
+    color: blueviolet;
+    margin: .25rem;
+    padding: .25rem;    
+    border-radius: 15px;
+    border-style:solid;
+}
+
+.cursiva {
+     font-family: Arial, Helvetica, sans-serif;
+     font-style: italic;
+}
+
+#muestras img  { width: 100px; margin: 10px 30px; cursor: pointer, hand; }
+#visor  { text-align: center; float: right; margin: 0 20px }
+#pantalla  { width: 500px; padding: 30px; border: 5px double green; 
+            background-color: #f4f0c9; }

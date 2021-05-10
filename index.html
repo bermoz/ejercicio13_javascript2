@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo getElementById</title>
+    <link rel="stylesheet" href="cssappdemo.css" />
+  </head>
+  <body onload = "llenarYear();">
+    <h1>Ejemplos JavaScript</h1>
+    <div class="caja">
+      <h2 id="titulo">Ejemplos Contador con un click</h2>
+      <p id="para0">Cualquier texto acá</p>
+      <button onclick="Contar();">Contar</button>
+    </div>
+
+    <div class="caja">
+      <h2>
+        Ejemplos de cambiar caracteristica por el identificador del Elemento
+      </h2>
+      <h2 id="para">Vamos a cambiar el color</h2>
+      <button onclick="changeColor('blue');">Azul</button>
+      <button onclick="changeColor('red');">Rojo</button>
+      <button onclick="changeColor('yellow');">Amarillo</button>
+    </div>
+
+    <div class="caja">
+      <h2>Ejemplos de cambiar Estilo del Elemento</h2>
+      <h2 id="para4">Vamos a cambiar el color del estilo del parrafo</h2>
+      <p id="para3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione
+        a commodi amet nesciunt corrupti
+        <span class="cursiva">facilis molestias</span> beatae fuga voluptates,
+        hic libero alias accusantium possimus quisquam sint soluta reiciendis
+        recusandae.
+      </p>
+
+      <button onclick="changeEstilo('caja1');">Estilo 1</button>
+      <button onclick="changeEstilo('caja2');">Estilo 2</button>
+      <button onclick="changeEstilo('caja3');">Estilo 3</button>
+    </div>
+
+    <div class="caja">
+      <h2>Ejemplos de cambiar texto del Elemento</h2>
+      <h2 id="para4">Vamos a cambiar el color del estilo del parrafo</h2>
+      <p id="para5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione
+        a commodi amet nesciunt corrupti
+        <span class="cursiva">facilis molestias</span> beatae fuga voluptates,
+        hic libero alias accusantium possimus quisquam sint soluta reiciendis
+        recusandae.
+      </p>
+
+      <button onclick="changeTexto('t1');">Español</button>
+      <button onclick="changeTexto('t2');">Ingles</button>
+      <button onclick="changeTexto('t3');">Frances</button>
+    </div>
+
+    <div class="caja">
+      <div id="mparra">
+        <h2>Nuevos parrafos</h2>
+        
+      </div>
+      <button onclick="misparrafos();">Genera parrafos</button>
+    </div>
+
+    <div class="caja">
+      <div class="caja3" id="mtitulo">
+        <h2>Nuevos Titulos</h2>        
+      </div>
+      <button onclick="mistitulos();">Genera Titulos tipo 3</button>
+    </div>
+
+    <div class="caja" >
+      <h2>Llenar una lista desplebable con los años</h2>
+      <select id="año"></select>
+      <select id="mes"></select>
+      <select id="dia"></select>
+      <!--
+      <button onclick="llenarYear();">Generar Años</button>
+      -->
+    </div>
+
+    <div class="caja" >
+      <div>
+      <h2>Llenar Lista Elementos</h2>
+      <ul id="mparra2">
+      </ul>
+      </div>
+      <button onclick="llenarparrafos2();">Generar Lista</button>
+    </div>
+
+
+    <div class="caja">
+      <h2>Llenar una lista desplebable con los Dias de la semana</h2>
+      <select id="diatexto"></select>
+      <button onclick="llenarDias();">Llenar Dias de la semana</button>
+    </div>
+
+    <div class="caja">
+      <div id="mtabla"><h1>Tabla auto generada</h1>
+      </div>
+      <button onclick="generaTabla();">Crear y llenar la tabla</button>
+
+    </div>
+
+    <div class="caja">
+      <div id="mforma"><h1>Formulario Inscripción</h1>
+      </div>
+      <button onclick="generaForma();">Crear Fecha</button>
+    </div>
+
+    <div class="caja">
+      <h1>Acceso a imágenes. Pulsa sobre la imagen para verla en grande</h1>
+      <div id="visor">
+        <h3 id="descripcion">Barca de pesca</h3>
+        <img src="../objetos/muestra1.jpg" alt="Barca de pesca" id="pantalla"/>
+      </div>
+      <div id="muestras">
+        <img onclick="muestra('primera')" name="primera" src="https://aprende-web.net/javascript/objetos/muestra1.jpg" alt="Barca de pesca" />
+        <img onclick="muestra(2)" src="https://aprende-web.net/javascript/objetos/muestra2.jpg" alt="Casa de campo" />
+        <img onclick="muestra(3)" src="https://aprende-web.net/javascript/objetos/muestra3.jpg" alt="Papagayos" />
+        <img onclick="muestra(4)" src="https://aprende-web.net/javascript/objetos/muestra4.jpg" alt="Prueba de motocrós" />
+      </div>
+    </div>
+
+<div class="caja">
+  <form name="suscripcion" action="#">
+    <h2>Temas que me interesan</h2>
+    <input  type="checkbox" name="deportes" value="Deportes" />
+         <label for="deportes">Deportes</label><br/>
+    <input type="checkbox" name="noticias" value="Noticias" />
+         <label for="noticias">Noticias</label><br/>
+    <input type="checkbox" name="economia" value="Economia" />
+         <label for="economia">Economía</label><br/>
+    <input type="checkbox" name="cultura" value ="Cultura" />
+         <label for="cultura">Cultura</label><br/>
+    <input type="checkbox" name="medioambiente" value="Medio Ambiente" />
+         <label for="medioambiente">Medio Ambiente</label><br/><br/>
+    <input  type="button"  name="ver" value="Ver Temas" onclick="info()" />
+    </form>
+    <div class="caja1">
+
+    </div>
+</div>
+
+    <div class="caja">
+     <form action="">
+      <div id="mregistro"><h1>Registro de Datos</h1>
+      </div>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre"></input><br>
+      <label for="precio">Precio</label>
+      <input type="text" id="precio"></input><br>
+      <label for="estado">Estado</label>
+      <input type="radio" id="nombre"></input><br>
+      <button onclick="myproducto(nombre ,precio,estado);">Crear y llenar Registro de datos</button>
+    </form>
+    </div>
+
+
+    <script src="appdemo.js"></script>
+  </body>
+</html>
