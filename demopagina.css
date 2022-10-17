@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Roboto:wght@300;500;700&display=swap");
+:root {
+  --color1: black;
+  --color2: blue;
+  --color3: yellow;
+  --color4: aliceblue;
+  --color5:rgb(7, 245, 27);
+  --color6:rgb(35, 38, 41);
+  --color7:rgb(10, 145, 21);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
+  max-width: 1440px;
+  font-size: 16px;
+  margin: 2rem;
+}
+
+.encabezado {
+  background-color: var(--color2);
+  padding: 2rem;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color3);
+  padding: 0.5rem;
+  text-align: center;
+}
+.opcion {
+  background-color: rgb(100, 100, 102);
+  margin: 1rem;
+  padding: 1rem;
+  width: 10%;
+  text-align: center;
+  border-radius: 1rem;
+  color: var(--color4);
+  text-decoration: none;
+}
+.opcion:hover {
+  background-color: var(--color5)
+  color: var(--color6);
+}
+
+.opcion1 {
+  color:var(--color4);
+  text-decoration: none;
+  list-style: none;;
+  padding: .5rem;
+
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.menuizq {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color7);
+  color: var(--color1)
+  padding: 2rem;
+}
+
+.menuder {
+
+}
+.noticias {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.articulo {
+  width: 20%;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.piepagina {
+  background-color: blue;
+  padding: 2rem;
+  text-align: center;
+}
